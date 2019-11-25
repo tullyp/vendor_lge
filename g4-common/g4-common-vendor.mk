@@ -846,7 +846,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     TimeService \
-    qcrilmsgtunnel \
     com.quicinc.cne.constants@1.0.so \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
@@ -858,3 +857,5 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqmi_cci \
     libqmi_client_helper
+
+    #qcrilmsgtunnel \
