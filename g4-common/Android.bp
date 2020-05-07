@@ -212,6 +212,17 @@ android_app_import {
     apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 }
 
+android_app_import {
+    name: "ims",
+    owner: "lge",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    proprietary: true,
+    apk: "proprietary/vendor/ims/ims.apk",
+}
+
 // java_import
 // -------------------------
 // see https://liwugang.github.io/soong/java.html#java_import for all options
