@@ -847,6 +847,7 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmiservices \
     libqmi_cci \
-    libqmi_client_helper
+    libqmi_client_helper \
+    ims
 
     #qcrilmsgtunnel \
