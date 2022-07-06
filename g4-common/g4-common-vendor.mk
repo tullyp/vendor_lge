@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4-common/proprietary/lib/libvss_nv_iface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvss_nv_iface.so \
     vendor/lge/g4-common/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/lge/g4-common/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
-    vendor/lge/g4-common/proprietary/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsoftkeymaster.so \
     vendor/lge/g4-common/proprietary/lib64/hw/lgkm.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/lgkm.default.so \
     vendor/lge/g4-common/proprietary/lib64/hw/lgkm.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/lgkm.msm8992.so \
     vendor/lge/g4-common/proprietary/lib64/hw/sensors.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.msm8992.so \
