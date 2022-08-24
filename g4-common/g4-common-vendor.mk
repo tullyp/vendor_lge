@@ -374,6 +374,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4-common/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
     vendor/lge/g4-common/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/lge/g4-common/proprietary/vendor/lib/libhwdaphal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwdaphal.so \
+    vendor/lge/g4-common/proprietary/vendor/lib/libFIHNxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFIHNxp.so \
+    vendor/lge/g4-common/proprietary/vendor/lib64/libFIHNxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFIHNxp.so \
+    vendor/lge/g4-common/proprietary/vendor/lib/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfa98xx.so \
+    vendor/lge/g4-common/proprietary/vendor/lib64/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfa98xx.so \
+    vendor/lge/g4-common/proprietary/vendor/lib/libtfa98xx_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfa98xx_hal.so \
+    vendor/lge/g4-common/proprietary/vendor/lib64/libtfa98xx_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfa98xx_hal.so \
     vendor/lge/g4-common/proprietary/vendor/lib64/libloc_pla.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_pla.so \
     vendor/lge/g4-common/proprietary/vendor/lib64/libloc_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_stub.so \
     vendor/lge/g4-common/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
