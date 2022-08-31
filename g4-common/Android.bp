@@ -1,0 +1,270 @@
+//
+// This Blueprint was created by:
+//
+// 1) lunch <target>
+// 2) mka blueprint_tools
+// 3) androidmk vendor/lge/g4-common/Android.mk > vendor/lge/g4-common/Android.bp
+// 4) manual adjustments:
+//	- added system_ext_specific: true (see related comment block)
+//	- removed incompatible flags (certificate,dex_preopt)
+//
+// conditionals are not supported in Blueprints so this was not converted:
+// ANDROIDMK TRANSLATION ERROR: unsupported conditional
+// ifneq ($(filter ls991_usu f500_usu h810_usu h811 h812_usu h815 h815_usu h818_usu h819_usu us991_usu vs986_usu,$(TARGET_DEVICE)),)
+//
+
+cc_prebuilt_library_shared {
+    name: "libcir_driver",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/lib64/libcir_driver.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/lib/libcir_driver.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libloc_api_v02",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/lib64/libloc_api_v02.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/lib/libloc_api_v02.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libloc_ds_api",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/lib64/libloc_ds_api.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/lib/libloc_ds_api.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libFlacSwDec",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libFlacSwDec.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libFlacSwDec.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmm-abl",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libmm-abl.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libmm-abl.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqmi.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqmi.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_qmux",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqmi_client_qmux.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqmi_client_qmux.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmiservices",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqmiservices.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_cci",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_helper",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqmi_client_helper.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqmi_client_helper.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libthermalclient",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libthermalclient.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtime_genoff",
+    owner: "lge",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
+        },
+    },
+    compile_multilib: "both",
+    proprietary: true,
+}
+
+android_app_import {
+    name: "com.qualcomm.location",
+    owner: "lge",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+}
+
+android_app_import {
+    name: "qcrilmsgtunnel",
+    owner: "lge",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+}
+
+// java_import
+// -------------------------
+// see https://liwugang.github.io/soong/java.html#java_import for all options
+//
+// system_ext_specific: true
+// -------------------------
+// Short:
+// When set to true, it is installed into /system_ext (or /system/system_ext if system_ext partition does not exist).
+//
+// Detailed:
+// The /system_ext partition was introduced in Android 11 as an optional partition. (It’s the place for non-AOSP
+// components that have tight coupling with the AOSP-defined components in the /system partition.) The /system_ext
+// partition is assumed to be the OEM-specific extension to the /system partition, without an interface defined
+// across the two partitions. Components in the /system_ext partition can make private API calls into the /system
+// partition, and components in the /systempartition can make private API calls into the /system_ext partition.
+// Because the two partitions are tightly coupled, both partitions are upgraded together when a new Android
+// version is released. A /system_ext partition created for the previous release of Android doesn’t need to be
+// compatible with the /system partition in the next Android release.
+// To install a module to the /system_ext partition, add system_ext_specific: trueto the Android.bp file. For
+// devices that don't have a /system_ext partition, install such modules to the ./system_ext subdirectory in the
+// /system partition.
+
+java_import {
+    name: "com.qti.location.sdk",
+    owner: "lge",
+    jars: ["proprietary/framework/com.qti.location.sdk.jar"],
+    system_ext_specific: true,
+}
+
+java_import {
+    name: "com.qti.snapdragon.sdk.display",
+    owner: "lge",
+    jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
+    system_ext_specific: true,
+}
+
+java_import {
+    name: "izat.xt.srv",
+    owner: "lge",
+    jars: ["proprietary/framework/izat.xt.srv.jar"],
+    system_ext_specific: true,
+}
+
+java_import {
+    name: "qcnvitems",
+    owner: "lge",
+    jars: ["proprietary/framework/qcnvitems.jar"],
+    system_ext_specific: true,
+}
+
+java_import {
+    name: "qcrilhook",
+    owner: "lge",
+    jars: ["proprietary/framework/qcrilhook.jar"],
+    system_ext_specific: true,
+}
