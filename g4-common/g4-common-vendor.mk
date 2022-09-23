@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4-common/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/lge/g4-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/lge/g4-common/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
+    vendor/lge/g4-common/proprietary/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/lge/g4-common/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml \
     vendor/lge/g4-common/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/lge/g4-common/proprietary/firmware/image/keymaste.mdt:firmware/image/keymaste.mdt \
@@ -828,6 +829,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4-common/proprietary/vendor/lib64/hw/nfc_nci.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8992.so \
     vendor/lge/g4-common/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
     vendor/lge/g4-common/proprietary/vendor/lib64/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
+
+# IMS jar
+PRODUCT_COPY_FILES += \
+    vendor/lge/g4-common/proprietary/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar
 
 PRODUCT_PACKAGES += \
     libcir_driver \
