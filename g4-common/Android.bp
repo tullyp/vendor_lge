@@ -223,6 +223,28 @@ android_app_import {
     apk: "proprietary/vendor/ims/ims.apk",
 }
 
+android_app_import {
+    name: "HiddenMenu",
+    owner: "lge",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    proprietary: true,
+    apk: "proprietary/vendor/ims/HiddenMenu.apk",
+}
+
+android_app_import {
+    name: "datastatusnotification",
+    owner: "lge",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    proprietary: true,
+    apk: "proprietary/vendor/ims/datastatusnotification.apk",
+}
+
 // java_import
 // -------------------------
 // see https://liwugang.github.io/soong/java.html#java_import for all options
