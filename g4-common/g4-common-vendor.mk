@@ -853,6 +853,9 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqmi_cci \
     libqmi_client_helper \
-    ims
+    ims \
+    datastatusnotification  \
+    HiddenMenu 
+    
 
     #qcrilmsgtunnel \
